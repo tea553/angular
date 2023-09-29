@@ -16,7 +16,7 @@ defaults:
 
 jobs:
   saucelabs:
-    runs-on: ubuntu-latest-4core
+    runs-on: ubuntu-latest
     env:
       SAUCE_TUNNEL_IDENTIFIER: angular-framework-${{ github.run_number }}
       SAUCE_USERNAME: ${{ vars.SAUCE_USERNAME }}
